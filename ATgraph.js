@@ -2,7 +2,7 @@ const mychart = document.getElementById('ctx2');
 let arr = [];
 
 chrome.storage.local.get({allTabs:[]},(res)=>{
-    arr = res.allTabs;
+     = res.allTabs;
     console.log(res.allTabs);
     arr = sortTabs(arr);
     let dispArr = (arr.length >= 8)? arr.slice(0,8):arr;
